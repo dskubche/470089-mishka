@@ -16,16 +16,16 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            Каталог товаров
+            <a class="main-nav__link" href="#">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            Вязание на заказ
+            <a class="main-nav__link" href="#">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
-            Поиск по сайту
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
           <li class="main-nav__item main-nav__item--cart">
-            Корзина пуста
+            <a class="main-nav__link" href="#">Корзина пуста</a>
           </li>
         </ul>
       </div>
@@ -36,10 +36,10 @@
     <div class="form_title-wrapper">
       <h1 class="form__title">Вязание на заказ</h1>
     </div>
-    <p class="form__promo">
-      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-    </p>
     <section class="form">
+      <p class="form__promo">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
       <form method="post" action="#" class="form__options">
         <div class="form__type">
           <h3 class="form__title">Тип</h3>
@@ -102,29 +102,17 @@
         </div>
         <div class="form__tel">
           <h3 class="form__title">Тел</h3>
-          <ul class="form__list">
-            <li class="form__item">
-              <label for="tel" class="form__label--tel"></label>
-              <input type="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" class="form__input--tel" required/>
-            </li>
-          </ul>
+          <label for="tel" class="form__label--tel"></label>
+          <input type="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" class="form__input--tel" required/>
         </div>
         <div class="form__email">
           <h3 class="form__title">E-mail</h3>
-          <ul class="form__list">
-            <li class="form__item">
-              <label for="email" class="form__label--email"></label>
-              <input type="email" id="email" placeholder="Ваш Email*" class="form__input--email" required/>
-            </li>
-          </ul>
+          <label for="email" class="form__label--email"></label>
+          <input type="email" id="email" placeholder="Ваш Email*" class="form__input--email" required/>
         </div>
         <div class="form__additional">
           <h3 class="form__title">Доп</h3>
-          <ul class="form__list">
-            <li class="form__item">
-              <textarea id="additional" placeholder="Опишите все ваши пожелания к заказу" class="form__input--additional"></textarea>
-            </li>
-          </ul>
+          <textarea id="additional" placeholder="Опишите все ваши пожелания к заказу" class="form__input--additional"></textarea>
         </div>
         <button type="submit" class="form__submit button">Отправить заказ</button>
       </form>
