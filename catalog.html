@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Мишка - Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
   <header class="page-header">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="http://placehold.it/90x35" width="90" height="35" alt="Магазин Mishka"/>
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="90" height="35" alt="Магазин Mishka"/>
     </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -33,14 +34,14 @@
   </header>
 
   <main class="catalog-main">
-    <div class="catalog__title-wrapper">
-      <h1 class="catalog__title">Каталог товаров</h1>
+    <div class="catalog-main__title-wrapper">
+      <h1 class="catalog-main__title">Каталог товаров</h1>
     </div>
     <section class="catalog-goods">
       <ul class="catalog-goods__list">
         <li class="catalog-goods__item">
           <a class="catalog-goods__link-image">
-            <img class="catalog-goods__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик" />
+            <img class="catalog-goods__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик" />
           </a>
           <a class="catalog-goods__link-title">
             <h3 class="catalog-goods__title">Зайчик-попрыгайчик</h3>
@@ -57,7 +58,7 @@
         </li>
         <li class="catalog-goods__item">
           <a class="catalog-goods__link-image">
-            <img class="catalog-goods__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья" />
+            <img class="catalog-goods__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья" />
           </a>
           <a class="catalog-goods__link-title">
             <h3 class="catalog-goods__title">Корзинка для белья</h3>
@@ -74,10 +75,10 @@
         </li>
         <li class="catalog-goods__item">
           <a class="catalog-goods__link-image">
-            <img class="catalog-goods__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек" />
+            <img class="catalog-goods__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек" />
           </a>
           <a class="catalog-goods__link-title">
-            <h3 class="catalog-goods__title">Большая корзинка для игрушек</h3>
+            <h3 class="catalog-goods__title">Большая корзинка<br />для игрушек</h3>
           </a>
           <p class="catalog-goods__info">
             Диаметр 30 см, высота 30 см
@@ -92,10 +93,11 @@
       </ul>
     </section>
     <section class="production">
-      <h2 class="production__title section__title">
-        Процесс производства
+      <h2 class="production__title">
+        Процесс<br />производства
       </h2>
-      <video controls preload="metadata" width="260" height="150" src="#" poster="#"></video>
+      <img class="production__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Производство" />
+      <video class="production__video" preload="metadata" width="260" height="150" src="#" poster="#"></video>
       <p class="production__info">
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
       </p>
@@ -118,13 +120,14 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      Разработано:
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      Разработано
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
     </div>
   </footer>
 
-  <section class="add-cart modal">
-    <h2 class="add-cart__title section__title">Добавить в корзину</h2>
+
+  <section class="add-cart modal visually-hidden">
+    <h2 class="add-cart__title section-title">Добавить в корзину</h2>
     <form>
       <input type="radio" class="add-cart__small" id="add-cart__small" value="add-cart__small" name="add-cart__size" checked>
       <input type="radio" class="add-cart__meduim" id="add-cart__medium" value="add-cart__medium" name="add-cart__size">
