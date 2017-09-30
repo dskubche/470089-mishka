@@ -1,6 +1,11 @@
 .promo {
-  padding-left: 30px;
   margin-bottom: 67px;
+  .container-mobile();
+}
+
+.promo__wrapper
+{
+  .wrapper-mobile();
 }
 
 .promo__title {
@@ -54,4 +59,25 @@
   margin: 0;
   padding: 0 0 0 70px;
   margin-bottom: 25px;
+}
+
+@media (min-width: @tablet-width) {
+.promo{
+  .wrapper-tablet();
+}
+.promo__wrapper
+{
+  .wrapper-tablet();
+  display: flex;
+  flex-wrap: wrap;
+}
+.promo__price{
+  margin-right: auto;
+  min-width: 600px;
+}
+.promo__order
+{
+  margin-right: auto;
+}
+
 }

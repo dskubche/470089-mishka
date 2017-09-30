@@ -1,10 +1,21 @@
 .page-footer {
   background-color: #f1f1f1;
   padding-top: 5px;
+
+}
+.page-footer__wrapper {
+  .container-mobile ();
 }
 
 .page-footer__social {
   margin-left: 30px;
   margin-right: 30px;
   border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    .container-tablet ();
+    display: flex;
+  }
 }

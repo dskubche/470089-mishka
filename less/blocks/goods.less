@@ -1,6 +1,7 @@
 .goods {
   margin-top: -18px;
   margin-bottom: 25px;
+  .container-mobile();
 }
 
 .goods__item {
@@ -27,4 +28,23 @@
 
 .goods__link {
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .goods
+  {
+    .wrapper-tablet ();
+  }
+
+.goods__list
+{
+  display: flex;
+}
+
+.goods__item
+{
+  min-width: 334px;
+  box-sizing: border-box;
+
+}
 }
