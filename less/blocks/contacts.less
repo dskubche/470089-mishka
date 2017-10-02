@@ -47,6 +47,7 @@
   .contacts {
     .container-tablet ();
   }
+
   .contacts__wrapper {
     .wrapper-tablet();
   }
@@ -59,17 +60,39 @@
     display: flex;
     width: 334px;
   }
+
   .contacts__adress {
     display: flex;
     width: 334px;
   }
 
-
-  .contacts__write
-  {
+  .contacts__write {
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
+}
 
+@media (min-width: @desktop-width) {
+  .contacts {
+    .container-desktop ();
+  }
+
+  .contacts__wrapper {
+    .wrapper-desktop();
+    padding-left: 225px;
+    display: flex;
+  }
+
+  .contacts__info {
+    display: block;
+  }
+
+  .contacts__email {
+    display: block;
+  }
+
+  .contacts__adress {
+    display: block;
+  }
 }

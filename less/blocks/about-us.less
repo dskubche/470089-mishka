@@ -26,7 +26,6 @@
   &--ecology {
     background-image: url("../img/icon-feature-flower.svg");
     background-position: 10px 10px;
-
   }
 
   &--prices {
@@ -37,13 +36,11 @@
   &--likes {
     background-image: url("../img/icon-feature-heart.svg");
     background-position: 10px 17px;
-
   }
 
   &--nice {
     background-image: url("../img/icon-feature-ball.svg");
     background-position: 5px 15px;
-
   }
 
   &--domestic {
@@ -65,23 +62,24 @@
 
   .about-us__wrapper {
     .wrapper-tablet ();
-
   }
 
   .about-us__list {
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
+
   .about-us__item {
     width: 334px;
     box-sizing: border-box;
+
     &--ecology {
-order:0;
+      order: 0;
     }
 
     &--prices {
       order: 2;
-        }
+    }
 
     &--likes {
       order: 4;
@@ -93,11 +91,33 @@ order:0;
 
     &--domestic {
       order: 3;
-          }
+    }
 
     &--package {
       order: 5;
-          }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us {
+    .container-desktop ();
   }
 
+  .about-us__wrapper {
+    .wrapper-desktop ();
+  }
+
+  .about-us__list {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
+
+  .about-us__item {
+    width: 350px;
+  }
+
+  .about-us__title {
+    margin-left: 175px;
+  }
 }

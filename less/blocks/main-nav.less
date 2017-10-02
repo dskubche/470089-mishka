@@ -21,16 +21,17 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+
   &--site {
     margin-top: 0;
   }
+
   &--promo {
     display: none;
   }
 }
 
 .main-nav__link {
-
   color: #000000;
   text-decoration: none;
   margin: 0;
@@ -60,39 +61,116 @@
   background-image: url("../img/icon-menu-close.svg");
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav__wrapper
-  {
-display: flex;
-flex-wrap: wrap-reverse;
-  }
-
-.main-nav__toggle
-{
+.main-nav__delivery {
   display: none;
 }
-  .main-nav__list
-  {
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    position: relative;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
     display: flex;
     margin: 0;
+
     &--promo {
       display: none;
     }
+
     &--catalog {
-      margin-left: -240px;
+      margin-top: -5px;
+      margin-left: -260px;
       font-size: 15px;
     }
+
     &--site {
       margin-left: auto;
     }
   }
 
-  .main-nav__item
-  {
+  .main-nav__item {
     background: none;
     border-top: none;
     border-bottom: none;
     border-right: 1px solid #ececec;
     min-width: 200px;
+
+    &--cart {
+      text-align: right;
+    }
+
+    &--search {
+      opacity: 0;
+    }
+
+    &--catalog {
+      text-align: left;
+      min-width: 167px;
+    }
+
+    &--order {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  .main-nav__delivery {
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    right: 0;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    .wrapper-desktop();
+    flex-wrap: wrap;
+  }
+
+  .main-nav__list {
+    &--promo {
+      display: flex;
+      font-size: 15px;
+      margin-right: auto;
+    }
+
+    &--site {
+      margin-left: auto;
+    }
+
+    &--catalog {
+      margin-left: 0;
+      font-size: 17px;
+    }
+  }
+
+  .main-nav__delivery {
+    position: static;
+    margin-left: auto;
+  }
+
+  .main-nav__item {
+    &--catalog {
+      width: 173px;
+    }
+
+    &--order {
+      text-align: right;
+    }
+
+    &--promo {
+      text-align: left;
+      padding: 0;
+      width: 150px;
+    }
   }
 }

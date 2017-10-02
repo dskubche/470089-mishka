@@ -49,6 +49,7 @@
     background-image: url("../img/icon-right-arrow.svg");
   }
 }
+
 @media (min-width: @tablet-width) {
   .reviews {
     .container-tablet ();
@@ -78,5 +79,17 @@
       right: 0;
       bottom: 0;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    .wrapper-desktop ();
+  }
+
+  .reviews__wrapper {
+    width: 875px;
+    margin-left: 175px;
+    margin-right: 0;
   }
 }

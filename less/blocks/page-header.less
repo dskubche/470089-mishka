@@ -26,6 +26,24 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-.wrapper-tablet ();
+    .wrapper-tablet ();
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    margin-left: 0;
+    margin-right: 170px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    position: relative;
+    .wrapper-desktop();
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: 480px;
   }
 }

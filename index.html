@@ -16,11 +16,11 @@
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list main-nav__list--catalog">
-          <li class="main-nav__item">
+                <ul class="main-nav__list main-nav__list--catalog">
+          <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link" href="#">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--order">
             <a class="main-nav__link" href="#">Вязание на заказ</a>
           </li>
         </ul>
@@ -33,17 +33,17 @@
           </li>
         </ul>
         <ul class="main-nav__list main-nav__list--promo">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--promo">
             <a class="main-nav__link" href="#">Новые поступления</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--promo">
             <a class="main-nav__link" href="#">Распродажа</a>
           </li>
         </ul>
-        </ul>
+        <p class="main-nav__delivery">Бесплатная доставка по России</p>
       </div>
-    </nav>
-  </header>
+
+    </nav>  </header>
 
   <main class="page-main">
     <div class="page-main__slogan">
@@ -68,6 +68,7 @@
     </section>
     <section class="promo">
       <div class="promo__wrapper">
+        <div class="promo__wrapper-info">
         <h2 class="promo__title section-title">Вязанные корзинки</h2>
         <h3 class="promo__subtitle">Товар недели</h3>
         <p class="promo__description">
@@ -99,6 +100,7 @@
             </td>
           </tr>
         </table>
+      </div>
         <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" />
         <p class="promo__price">
           Цена: 990 руб.
@@ -173,13 +175,18 @@
             </p>
           </div>
         </div>
+
         <img class="contacts__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" />
+        </div>
         <a class="contacts__write button" href="#">Напишите нам</a>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="90" height="35" alt="Магазин Mishka"/>
+      </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">

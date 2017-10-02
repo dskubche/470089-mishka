@@ -3,8 +3,7 @@
   .container-mobile();
 }
 
-.promo__wrapper
-{
+.promo__wrapper {
   .wrapper-mobile();
 }
 
@@ -62,22 +61,48 @@
 }
 
 @media (min-width: @tablet-width) {
-.promo{
-  .wrapper-tablet();
-}
-.promo__wrapper
-{
-  .wrapper-tablet();
-  display: flex;
-  flex-wrap: wrap;
-}
-.promo__price{
-  margin-right: auto;
-  min-width: 600px;
-}
-.promo__order
-{
-  margin-right: auto;
+  .promo {
+    .wrapper-tablet();
+  }
+
+  .promo__wrapper {
+    .wrapper-tablet();
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .promo__price {
+    margin-right: auto;
+    min-width: 600px;
+  }
+
+  .promo__order {
+    margin-right: auto;
+  }
+
+  .promo__wrapper-info {
+    width: 350px;
+  }
 }
 
+@media (min-width: @desktop-width) {
+  .promo {
+    .wrapper-desktop();
+  }
+
+  .promo__wrapper {
+    width: 875px;
+    margin-left: 175px;
+    position: relative;
+  }
+
+  .promo__description {
+    width: 300px;
+  }
+
+  .promo__subtitle {
+    position: absolute;
+    width: 90px;
+    left: -150px;
+  }
 }

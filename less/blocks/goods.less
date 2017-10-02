@@ -31,20 +31,27 @@
 }
 
 @media (min-width: @tablet-width) {
-  .goods
-  {
+  .goods {
     .wrapper-tablet ();
+    margin-top: -120px;
   }
 
-.goods__list
-{
-  display: flex;
+  .goods__list {
+    display: flex;
+  }
+
+  .goods__item {
+    min-width: 334px;
+    box-sizing: border-box;
+  }
 }
 
-.goods__item
-{
-  min-width: 334px;
-  box-sizing: border-box;
+@media (min-width: @desktop-width) {
+  .goods {
+    .wrapper-desktop();
+  }
 
-}
+  .goods__item {
+    min-width: 525px;
+  }
 }
