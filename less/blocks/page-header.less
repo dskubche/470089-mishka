@@ -1,11 +1,13 @@
 .page-header {
   display: flex;
+  .container-mobile();
 }
 
 .page-header__logo {
   margin-left: 116px;
   margin-right: 66px;
   margin-top: 22px;
+  height: 40px;
 }
 
 .page-header__logo-image {
@@ -19,5 +21,29 @@
 
   &:focus {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    .wrapper-tablet ();
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    margin-left: 0;
+    margin-right: 170px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    position: relative;
+    .wrapper-desktop();
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: 480px;
   }
 }

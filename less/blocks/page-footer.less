@@ -3,8 +3,31 @@
   padding-top: 5px;
 }
 
+.page-footer__wrapper {
+  .container-mobile ();
+}
+
 .page-footer__social {
   margin-left: 30px;
   margin-right: 30px;
   border-bottom: 1px solid #ececec;
+}
+
+.page-footer__logo-image {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    .wrapper-tablet ();
+    display: flex;
+    min-height: 100px;
+    padding-top: 45px;
+  }
+
+  .page-footer__logo-image {
+    margin-top: 15px;
+    display: block;
+    margin-right: 110px;
+  }
 }
