@@ -5,12 +5,16 @@
 
 .promo__wrapper {
   .wrapper-mobile();
+  padding-left: 4px;
 }
+
 
 .promo__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
+  margin-top: 10px;
+
 }
 
 .promo__subtitle {
@@ -22,15 +26,18 @@
   margin: 0;
   padding: 0;
   margin-bottom: 22px;
+
 }
 
 .promo__description {
   margin-bottom: 16px;
+
 }
 
 .promo__info {
   border-collapse: collapse;
   margin-bottom: 25px;
+
 }
 
 .promo__field {
@@ -69,26 +76,71 @@
     .wrapper-tablet();
     display: flex;
     flex-wrap: wrap;
+    padding-left: 0px;
   }
 
+.promo__title
+{
+  margin-left: -2px;
+
+}
+  .promo__subtitle
+  {
+    width: 80px;
+margin-left: 140px;
+margin-top: 22px;
+text-align: center;
+line-height: 17px;
+  }
+  .promo__wrapper-info {
+    width: 335px;
+    margin-top: 15px;
+
+  }
+
+  .promo__description
+  {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    width: 290px;
+    margin-bottom: 35px;
+  }
+
+.promo__field
+{
+  min-width: 95px;
+}
   .promo__price {
     margin-right: auto;
     min-width: 600px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 33px;
+    transform: translateY(-109px);
   }
 
   .promo__order {
     margin-right: auto;
+    width: 285px;
+    transform: translateY(-110px);
   }
 
-  .promo__wrapper-info {
-    width: 350px;
+  .promo__image-wrapper
+  {
+    margin-top: 40px;
+    width: 333px;
+    height: 403px;
+    background-color: #ececec;
+    margin-left: 0;
   }
+
 }
-
 @media (min-width: @desktop-width) {
   .promo {
     .wrapper-desktop();
   }
+
 
   .promo__wrapper {
     width: 875px;
@@ -96,13 +148,42 @@
     position: relative;
   }
 
+.promo__wrapper-info {
+  margin-top: 27px;
+}
+  .promo__title{
+    width: 700px;
+    margin-left: -4px;
+    z-index: 5;
+  }
+
   .promo__description {
-    width: 300px;
+    width: 290px;
+    margin-bottom: 45px;
   }
 
   .promo__subtitle {
     position: absolute;
     width: 90px;
-    left: -150px;
+    left: -277px;
+    top: 3px;
+  }
+
+  .promo__image-wrapper
+  {
+    width: 526px;
+    height: 637px;
+    transform: translateY(-155px);
+    margin-left: 12px;
+  }
+
+  .promo__price {
+    transform: translateY(-265px);
+    margin-left: 2px;
+  }
+
+  .promo__order {
+    width: 287px;
+    transform: translateY(-266px);
   }
 }
