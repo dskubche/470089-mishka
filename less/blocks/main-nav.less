@@ -87,11 +87,11 @@
 
 .main-nav__icon {
   &--cart {
-    display: block;
+    display: none;
   }
 
   &--search {
-    display: block;
+    display: none;
   }
 }
 @media (min-width: @tablet-width) {
@@ -185,12 +185,14 @@
 
   .main-nav__icon {
     &--cart {
+      display: block;
       position: absolute;
       right: 212px;
       top: 30px;
     }
 
     &--search {
+      display: block;
       position: absolute;
       right: 95px;
       top: 32px;
