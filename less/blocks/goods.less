@@ -10,20 +10,37 @@
   font-weight: 700;
   color: #ffffff;
   padding: 27px 185px 28px 30px;
+  position: relative;
 
   &--interior {
     background-color: #63d1bb;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: 245px center;
-  }
+      &::after
+    {
+      content: "";
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 240px;
+      top:22px;
+      width: 45px;
+      height: 70px;
+  }}
 
   &--toys {
     background-color: #56c3b2;
+    &::after
+  {
+    content: "";
     background-image: url("../img/icon-toy.svg");
     background-repeat: no-repeat;
-    background-position: 235px center;
+    position: absolute;
+    left: 230px;
+    top:20px;
+    width: 80px;
+    height: 70px;
+}
   }
+
 }
 
 .goods__link {
@@ -33,7 +50,9 @@
 @media (min-width: @tablet-width) {
   .goods {
     .wrapper-tablet ();
-    margin-top: -120px;
+    margin-top: -134px;
+    min-height: 125px;
+    box-sizing: border-box;
   }
 
   .goods__list {
@@ -43,15 +62,60 @@
   .goods__item {
     min-width: 334px;
     box-sizing: border-box;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 35px;
+    min-height: 118px;
+    box-sizing: border-box;
+
+    &--interior::after {
+      left: 255px;
+      top:30px;
+    }
+    &--toys::after {
+      left: 240px;
+      top:30px;
+    }
+    &:hover
+    {
+      min-height: 123px;
+      padding-top: 22px;
+      transform: translateY(-5px);
+    }
+    &:focus
+    {
+      min-height: 123px;
+      padding-top: 22px;
+      transform: translateY(-5px);
+      color: rgba(255,255,255,0.3);
+    }
+    &:active
+    {
+      min-height: 123px;
+      padding-top: 22px;
+      transform: translateY(-5px);
+      color: rgba(255,255,255,0.3);
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .goods {
     .wrapper-desktop();
+    margin-top: -154px;
   }
 
   .goods__item {
     min-width: 525px;
+
+  &--interior::after {
+    left: 450px;
+    top:30px;
+
   }
-}
+  &--toys::after {
+    left: 430px;
+    top:30px;
+
+  }
+}}

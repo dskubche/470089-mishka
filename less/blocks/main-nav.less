@@ -36,6 +36,18 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &focus {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__item {
@@ -47,9 +59,11 @@
   padding-top: 28px;
   padding-bottom: 28px;
   text-align: center;
+
   &--search::after {
     display: none;
   }
+
   &--search::before {
     display: none;
   }
@@ -71,15 +85,15 @@
   display: none;
 }
 
-.main-nav__icon{
-  &--cart{
+.main-nav__icon {
+  &--cart {
     display: block;
   }
+
   &--search {
     display: block;
   }
 }
-
 @media (min-width: @tablet-width) {
   .main-nav__wrapper {
     display: flex;
@@ -122,10 +136,10 @@
 
     &--search {
       position: relative;
-      &::before
-      {
+
+      &::before {
         display: block;
-        content:"";
+        content: "";
         position: absolute;
         width: 1px;
         height: 90px;
@@ -133,10 +147,10 @@
         top: -7px;
         left: 52px;
       }
-      &::after
-      {
+
+      &::after {
         display: block;
-        content:"";
+        content: "";
         position: absolute;
         width: 1px;
         height: 90px;
@@ -165,26 +179,36 @@
     font-size: 15px;
   }
 
-  .main-nav__link--text
-  {
+  .main-nav__link--text {
     display: none;
   }
 
-  .main-nav__icon{
-    &--cart{
+  .main-nav__icon {
+    &--cart {
       position: absolute;
       right: 212px;
-      top:30px;
+      top: 30px;
     }
+
     &--search {
-position: absolute;
-right: 95px;
-top:32px;
+      position: absolute;
+      right: 95px;
+      top: 32px;
+
+      &:hover {
+        path {
+          fill: #63d1bb;
+        }
+      }
     }
   }
 
+  .main-nav__link--cart:hover .main-nav__icon--cart {
+    path {
+      fill: #63d1bb;
+    }
+  }
 }
-
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
     .wrapper-desktop();
@@ -196,6 +220,7 @@ top:32px;
       display: flex;
       font-size: 15px;
       margin-right: auto;
+      margin-top: 23px;
     }
 
     &--site {
@@ -205,12 +230,14 @@ top:32px;
     &--catalog {
       margin-left: 0;
       font-size: 17px;
+      margin-top: 0px;
     }
   }
 
   .main-nav__delivery {
     position: static;
     margin-left: auto;
+    margin-top:22px;
   }
 
   .main-nav__item {
@@ -225,7 +252,15 @@ top:32px;
     &--promo {
       text-align: left;
       padding: 0;
-      width: 150px;
+      width: 220px;
+    }
+    &--search::before
+    {
+      height: 93px;
+    }
+    &--search::after
+    {
+      height: 93px;
     }
   }
 }
