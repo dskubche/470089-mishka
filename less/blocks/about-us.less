@@ -36,6 +36,7 @@
   &--likes {
     background-image: url("../img/icon-feature-heart.svg");
     background-position: 10px 17px;
+    padding-right: 65px;
   }
 
   &--nice {
@@ -58,11 +59,17 @@
 @media (min-width: @tablet-width) {
   .about-us {
     .container-tablet ();
+    margin-bottom: 110px;
   }
 
   .about-us__wrapper {
     .wrapper-tablet ();
   }
+.about-us__title
+{
+  margin-left: -3px;
+  margin-bottom: 38px;
+}
 
   .about-us__list {
     display: flex;
@@ -70,8 +77,11 @@
   }
 
   .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
     width: 334px;
     box-sizing: border-box;
+    margin-bottom: 29px;
 
     &--ecology {
       order: 0;
@@ -79,10 +89,12 @@
 
     &--prices {
       order: 2;
+      padding-right: 80px;
     }
 
     &--likes {
       order: 4;
+      padding-right: 120px;
     }
 
     &--nice {
@@ -109,7 +121,7 @@
   }
 
   .about-us__list {
-    margin-left: 175px;
+margin-left: 175px;
     margin-right: 175px;
   }
 
