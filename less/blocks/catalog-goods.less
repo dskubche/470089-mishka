@@ -125,7 +125,6 @@ bottom: 31px;
 @media (min-width: @tablet-width) {
   .catalog-goods {
     .wrapper-tablet();
-    margin-bottom: 15px;
   }
 
   .catalog-goods__list {
@@ -148,6 +147,20 @@ bottom: 31px;
     width: 334px;
     height: 334px;
     background-color:#e6e5e3;
+  }
+
+  .catalog-goods__link-title
+  {
+    &:hover
+    {
+      opacity: 0.6;
+    }
+    &:focus {
+      opacity: 0.3;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .catalog-goods__image
