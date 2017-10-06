@@ -77,7 +77,7 @@
         </div>
         <div class="form__color-wrapper">
         <div class="form__color">
-          <h3 class="form__title">Цвет</h3>
+          <h3 class="form__title form__title--color">Цвет</h3>
           <ul class="form__list form__list--color">
             <li class="form__item form__item--color">
               <input type="checkbox" name="white" value="white" id="white" class="form__input form__input--color visually-hidden" checked/>
@@ -107,19 +107,19 @@
         </div>
       </div>
         <div class="form__username">
-          <h3 class="form__title form__title--name">ФИО</h3>
+          <h3 class="form__title form__title--username">ФИО</h3>
           <ul class="form__list form__list--username">
-            <li class="form__item form__item--name">
-              <label for="name" class="form__label form__label--name">Имя:</label><br />
-              <input type="text" id="name" placeholder="Введите ваше имя*" class="form__input--name" required/>
+            <li class="form__item form__item--username">
+              <label for="name" class="form__label form__label--username">Имя:</label><br />
+              <input type="text" id="name" placeholder="Введите ваше имя*" class="form__input--username" required/>
             </li>
-            <li class="form__item form__item--name">
-              <label for="surname" class="form__label form__label--name">Фамилия:</label><br />
-              <input type="text" id="surname" placeholder="Укажите фамилию*" class="form__input--name" required/>
+            <li class="form__item form__item--username">
+              <label for="surname" class="form__label form__label--username">Фамилия:</label><br />
+              <input type="text" id="surname" placeholder="Укажите фамилию*" class="form__input--username" required/>
             </li>
-            <li class="form__item form__item--name">
-              <label for="patronymic" class="form__label form__label--name">Отчество:</label><br />
-              <input type="text" id="patronymic" placeholder="Отчество, если желаете" class="form__input--name" />
+            <li class="form__item form__item--username">
+              <label for="patronymic" class="form__label form__label--username">Отчество:</label><br />
+              <input type="text" id="patronymic" placeholder="Отчество, если желаете" class="form__input--username" />
             </li>
           </ul>
         </div>
@@ -137,11 +137,12 @@
       </div>
         <div class="form__additional">
           <h3 class="form__title form__title--additional">Доп</h3>
+          <label for="additional" class="form__label form__label--additional visually-hidden"></label>
           <textarea id="additional" rows="7" cols="25" placeholder="Опишите все ваши пожелания к заказу" class="form__input--additional"></textarea>
         </div>
         <div class="form__footer">
         <p class="form__warning"><sup>*</sup>Поля обязательны для заполнения</p>
-        <button type="submit" class="form__submit button">Отправить заказ</button>
+        <button type="submit" class="button form__submit">Отправить заказ</button>
       </div>
       </form>
     </section>
