@@ -50,10 +50,9 @@
   margin-bottom: 30px;
   position: relative;
 
-
-
   &--username {
     margin-bottom: 25px;
+
     &::after {
       content: "";
       position: absolute;
@@ -68,6 +67,7 @@
   &--tel {
     margin-bottom: 10px;
     margin-left: 0;
+
     &::after {
       content: "";
       position: absolute;
@@ -82,6 +82,7 @@
   &--email {
     margin-bottom: 10px;
     margin-left: 0;
+
     &::after {
       content: "";
       position: absolute;
@@ -95,6 +96,7 @@
 
   &--additional {
     margin-bottom: 23px;
+
     &::after {
       content: "";
       position: absolute;
@@ -146,12 +148,12 @@
 
     &:active {
       border-bottom-color: #62d1ba;
-      background: url("../img/icon-phone-blue.svg");
+      background-image: url("../img/icon-phone-blue.svg");
     }
 
     &:focus {
       border-bottom-color: #62d1ba;
-      background: url("../img/icon-phone-blue.svg");
+      background-image: url("../img/icon-phone-blue.svg");
     }
   }
 
@@ -189,6 +191,7 @@
     padding-bottom: 10px;
     position: relative;
     border: 2px solid #444444;
+
     &:hover {
       border-color: #62d1ba;
     }
@@ -290,8 +293,6 @@
   margin-bottom: 40px;
 }
 
-
-
 .form__tel {
   margin-top: -6px;
   padding-bottom: 4px;
@@ -353,61 +354,159 @@
   .form__promo {
     display: block;
     .wrapper-tablet ();
+    margin-left: 21px;
     box-sizing: border-box;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-right: 20px;
+    margin-bottom: 70px;
   }
 
   .form__type {
     display: flex;
     .wrapper-tablet ();
     box-sizing: border-box;
+    margin-left: 22px;
+    margin-bottom: 15px;
   }
 
   .form__color-wrapper {
     background-color: #f1f1f1;
+    min-height: 302px;
+    margin-top: 0;
   }
 
   .form__tel-email-wrapper {
     background-color: #f1f1f1;
+    min-height: 228px;
+    box-sizing: border-box;
+    padding-top: 70px;
+    margin-top: -23px;
+    margin-bottom: 50px;
   }
 
   .form__color {
     .wrapper-tablet();
     box-sizing: border-box;
     display: flex;
+    padding-top: 65px;
+    margin-left: 20px;
+    margin-bottom: 70px;
   }
 
   .form__item {
     &--type {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
+      margin-left: 0;
+      padding-left: 0;
     }
 
     &--color {
-      width: 180px;
+      width: 220px;
+      margin-bottom: 52px;
     }
 
     &--username {
       display: flex;
       margin: 0;
-      border: none;
+      justify-content: space-between;
       width: 500px;
+      margin-bottom: 38px;
     }
+
+    &--tel {
+      background-color: rgba(0,0,0,0);
+    }
+  }
+
+  .form__label {
+    font-size: 19px;
+    line-height: 19px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .form__label--type::before {
+    width: 47px;
+    height: 47px;
+    top: -11px;
+    left: -80px;
+  }
+
+  .form__label--type::after {
+    width: 25px;
+    height: 25px;
+    top: 2px;
+    left: -67px;
+  }
+
+  .form__label--color::before {
+    width: 49px;
+    height: 49px;
+    left: -80px;
+    top: -10px;
+  }
+
+  .form__label--color::after {
+    content: url("../img/icon-tick.svg");
+    left: -70px;
+    top: 5px;
+  }
+
+  .form__label--username {
+    margin-right: 25px;
+  }
+
+  .form__title--additional{
+    padding-top: 12px;
+  }
+  .form__list--type {
+    margin-left: 0;
+    padding-left: 78px;
   }
 
   .form__list--color {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 115px;
+    margin-left: 0;
+    padding-left: 205px;
+    padding-right: 0;
+    justify-content: space-between;
+    min-width: 480px;
+  }
+
+  .form__list--username {
+    padding-left: 0;
   }
 
   .form__title {
     width: 167px;
     text-align: left;
+
+    &--username::after {
+      display: none;
+    }
+
+    &--tel::after {
+      display: none;
+    }
+
+    &--email::after {
+      display: none;
+    }
+    &--additional::after {
+      display: none;
+    }
   }
 
   .form__username {
-    .wrapper-tablet();
+    min-width: 600px;
+    margin-right: auto;
     box-sizing: border-box;
     display: flex;
+    margin-left: 20px;
+    margin-bottom: 0;
   }
 
   .form__tel {
@@ -415,6 +514,8 @@
     box-sizing: border-box;
     display: flex;
     border: none;
+    margin-left: 20px;
+    width: 700px;
   }
 
   .form__email {
@@ -422,43 +523,71 @@
     box-sizing: border-box;
     display: flex;
     border: none;
+    margin-left: 20px;
+    width: 700px;
   }
 
+.form__additional
+{
+  width: 700px;
+}
   .form__input {
-    &--userame {
-      border-bottom: 2px solid #000000;
+    &--username {
+      min-width: 300px;
       flex-grow: 1;
-      margin-left: 30px;
+      padding-top: 3px;
     }
 
     &--tel {
-      border-bottom: 2px solid #000000;
       flex-grow: 1;
+      padding-top: 0px;
+        min-width: 300px;
+        background-position: 450px -2px;
+        background-color: rgba(0,0,0,0);
     }
 
     &--email {
-      border-bottom: 2px solid #000000;
       flex-grow: 1;
+        background-position: 445px 3px;
+        background-color: rgba(0,0,0,0);
     }
 
     &--additional {
       flex-grow: 1;
+      margin-left: 0px;
     }
   }
 
   .form__additional {
     .wrapper-tablet ();
     display: flex;
+    margin-left: 20px;
+    margin-right: 0;
+    min-width: 700px;
+    margin-bottom: 60px;
   }
 
   .form__footer {
     .wrapper-tablet();
     display: flex;
     justify-content: space-between;
+    margin-bottom: -26px;
   }
 
   .form__warning {
     order: 1;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__submit {
+    width: 230px;
+    margin-left: 0px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    height: 49px;
+    box-sizing: border-box;
+    margin-top: -3px;
   }
 }
 @media (min-width: @desktop-width) {
