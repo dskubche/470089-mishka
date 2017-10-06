@@ -23,29 +23,37 @@
 
   &--toys {
     background-color: #56c3b2;
+
     &:hover {
       height: 107px;
     }
+
     &:focus {
       height: 107px;
     }
+
     &:active {
       height: 107px;
     }
   }
+
   &:hover {
     padding-top: 22px;
     box-sizing: border-box;
     transform: translateY(-5px);
   }
+
   &:focus {
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
+
     .goods__icon {
       opacity: 0.3;
     }
   }
+
   &:active {
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
+
     .goods__icon {
       opacity: 0.3;
     }
@@ -69,13 +77,14 @@
 .goods__link {
   text-decoration: none;
 }
+
 @media (min-width: @tablet-width) {
   .goods {
     .wrapper-tablet ();
     margin-top: -147px;
     height: 125px;
     box-sizing: border-box;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .goods__list {
@@ -89,7 +98,6 @@
     line-height: 30px;
     padding-left: 35px;
     min-height: 118px;
-    box-sizing: border-box;
 
     &:hover {
       min-height: 123px;
@@ -101,7 +109,7 @@
       min-height: 123px;
       padding-top: 22px;
       transform: translateY(-5px);
-      color: rgba(255,255,255,0.3);
+      color: rgba(255, 255, 255, 0.3);
 
       .goods__icon {
         opacity: 0.3;
@@ -112,7 +120,7 @@
       min-height: 123px;
       padding-top: 22px;
       transform: translateY(-5px);
-      color: rgba(255,255,255,0.3);
+      color: rgba(255, 255, 255, 0.3);
 
       .goods__icon {
         opacity: 0.3;
@@ -132,6 +140,7 @@
     }
   }
 }
+
 @media (min-width: @desktop-width) {
   .goods {
     .wrapper-desktop();

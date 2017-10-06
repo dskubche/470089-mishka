@@ -9,15 +9,15 @@
   margin-left: 4px;
 
   &:hover {
-    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0 1px 7px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:focus {
-    box-shadow: 0 1px 7px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -50,19 +50,18 @@
 .production__video {
   margin-bottom: 8px;
 }
+
 @media (min-width: @tablet-width) {
   .production {
     .wrapper-tablet();
     margin-bottom: 65px;
     margin-top: -15px;
-
   }
 
   .production__wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    padding-bottom: 12px;
+    padding: 0 0 12px;
   }
 
   .production__title {
@@ -79,11 +78,9 @@
     margin-right: auto;
     order: 3;
     margin-left: 38px;
-
   }
 
-  .production__video-wrapper
-  {
+  .production__video-wrapper {
     width: 100%;
     height: 455px;
     background-color: #dfddde;
@@ -98,51 +95,43 @@
     margin-bottom: 33px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .production {
     .wrapper-desktop ();
     margin-bottom: 106px;
   }
 
-  .production__wrapper{
+  .production__wrapper {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
-  padding-bottom: 0;
+    padding-bottom: 0;
   }
 
-  .production__video-wrapper{
+  .production__video-wrapper {
     width: 682px;
     height: 456px;
-    margin-bottom: 0px;
-  }
-
-  .production__order {
-    width: 187px;
-    margin-left: 85px;
     margin-bottom: 0;
   }
 
-  .production__info
-  {
+  .production__info {
     width: 226px;
     margin-left: 722px;
     margin-top: -278px;
   }
 
-  .production__order
-  {
+  .production__order {
     margin-left: 760px;
     margin-top: -113px;
     padding-bottom: 16px;
     height: 52px;
     box-sizing: border-box;
     width: 229px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
-  .production__title
-  {
+  .production__title {
     width: 155px;
     margin-top: 48px;
     margin-left: -17px;

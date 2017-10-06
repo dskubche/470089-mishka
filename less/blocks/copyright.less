@@ -14,20 +14,20 @@
     right: 12px;
     top: -5px;
   }
-&:hover .copyright__logo-htmlacademy
-{
-  fill: #46c1ae;
-}
-&:active
-{
-  opacity: 0.3;
-}
-&:focus
-{
-  opacity: 0.3;
+
+  &:hover .copyright__logo-htmlacademy {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
-}
 @media (min-width: @tablet-width) {
   .copyright {
     width: 145px;
@@ -36,5 +36,11 @@
     &__logo-htmlacademy {
       right: -50px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    margin-top: 12px;
   }
 }

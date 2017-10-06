@@ -114,6 +114,22 @@
 }
 
 .form__input {
+  &::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &::-moz-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:-moz-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
   &--username {
     .input-text();
     padding-top: 13px;
@@ -191,6 +207,7 @@
     padding-bottom: 10px;
     position: relative;
     border: 2px solid #444444;
+    resize: none;
 
     &:hover {
       border-color: #62d1ba;
@@ -345,6 +362,7 @@
 .form__item--username:active .form__label--username::after {
   background-color: #62d1ba;
 }
+
 @media (min-width: @tablet-width) {
   .form {
     .container-tablet();
@@ -381,9 +399,9 @@
     background-color: #f1f1f1;
     min-height: 228px;
     box-sizing: border-box;
-    padding-top: 70px;
+    padding-top: 67px;
     margin-top: -23px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .form__color {
@@ -416,7 +434,7 @@
     }
 
     &--tel {
-      background-color: rgba(0,0,0,0);
+      background-color: rgba(0, 0, 0, 0);
     }
   }
 
@@ -493,8 +511,12 @@
       display: none;
     }
 
-    &--email::after {
-      display: none;
+    &--email {
+      padding-top: 15px;
+
+      &::after {
+        display: none;
+      }
     }
 
     &--additional::after {
@@ -518,6 +540,7 @@
     border: none;
     margin-left: 20px;
     width: 700px;
+    margin-bottom: 18px;
   }
 
   .form__email {
@@ -530,14 +553,22 @@
   }
 
   .form__additional {
-    width: 700px;
+    .wrapper-tablet ();
+    display: flex;
+    margin-left: 20px;
+    margin-right: 0;
+    min-width: 700px;
+    margin-bottom: 60px;
   }
 
   .form__input {
+    padding-left: 15px;
+    font-size: 19px;
+
     &--username {
       min-width: 300px;
       flex-grow: 1;
-      padding-top: 3px;
+      padding-top: 0;
     }
 
     &--tel {
@@ -545,28 +576,20 @@
       padding-top: 0;
       min-width: 300px;
       background-position: 450px -2px;
-      background-color: rgba(0,0,0,0);
+      background-color: rgba(0, 0, 0, 0);
+      margin-bottom: 0;
     }
 
     &--email {
       flex-grow: 1;
-      background-position: 445px 3px;
-      background-color: rgba(0,0,0,0);
+      background-position: 445px 10px;
+      background-color: rgba(0, 0, 0, 0);
     }
 
     &--additional {
       flex-grow: 1;
       margin-left: 0;
     }
-  }
-
-  .form__additional {
-    .wrapper-tablet ();
-    display: flex;
-    margin-left: 20px;
-    margin-right: 0;
-    min-width: 700px;
-    margin-bottom: 60px;
   }
 
   .form__footer {
@@ -589,12 +612,14 @@
     padding-top: 7px;
     height: 49px;
     box-sizing: border-box;
-    margin-top: -3px;
+    margin-top: -5px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .form {
     .container-desktop();
+    margin-bottom: 60px;
   }
 
   .form__promo {
@@ -602,7 +627,7 @@
     width: 700px;
     padding-left: 0;
     box-sizing: border-box;
-    margin-left: auto;
+    margin-left: 275px;
     margin-right: auto;
   }
 
@@ -616,11 +641,11 @@
 
   .form__title {
     width: 110px;
+
     &--email {
       padding-top: 8px;
     }
   }
-
 
   .form__color {
     display: flex;
@@ -628,21 +653,19 @@
     box-sizing: border-box;
     padding-left: 0;
     margin-left: 135px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-bottom: 10px;
   }
 
-.form__color-wrapper
-{
-  padding-bottom: 0px;
-  min-height: 230px;
-  margin-bottom: 65px;
-}
+  .form__color-wrapper {
+    padding-bottom: 0;
+    min-height: 230px;
+    margin-bottom: 63px;
+  }
 
   .form__item {
     &--color {
       width: 190px;
-
     }
 
     &--username {
@@ -650,29 +673,29 @@
     }
   }
 
-
   .form__input {
-
     &--tel {
-
       background-position: 670px -2px;
-
     }
 
     &--email {
-
+      padding-top: 5px;
       background-position: 665px 3px;
-
-    }}
+    }
+  }
 
   .form__list {
+    &--type {
+      padding-left: 80px;
+    }
+
     &--color {
-      margin-left: 0px;
-      padding-left: 78px;
-      padding-top: 0px;
+      margin-left: 0;
+      padding-left: 80px;
+      padding-top: 0;
       width: 795px;
       box-sizing: border-box;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
@@ -680,11 +703,9 @@
     .wrapper-desktop();
     box-sizing: border-box;
     display: flex;
-    padding-left: 61px;
     padding-right: 175px;
     padding-left: 0;
     margin-left: 135px;
-
   }
 
   .form__tel {
@@ -694,6 +715,7 @@
     border: none;
     padding-left: 61px;
     padding-right: 175px;
+    margin-bottom: 28px;
   }
 
   .form__footer {
