@@ -1,6 +1,10 @@
 .page-footer {
   background-color: #f1f1f1;
   padding-top: 5px;
+  min-height: 161px;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .page-footer__wrapper {
@@ -26,8 +30,18 @@
   }
 
   .page-footer__logo-image {
-    margin-top: 15px;
+    margin-top: 5px;
     display: block;
-    margin-right: 110px;
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    .wrapper-desktop ();
+  }
+
+  .page-footer__logo-image {
+    margin-right: 290px;
   }
 }

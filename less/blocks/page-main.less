@@ -4,7 +4,7 @@
   min-height: 283px;
   background-position: center -20px;
   background-repeat: no-repeat;
-  margin-top: -2px;
+  margin-top: -20px;
   .container-mobile ();
 }
 
@@ -18,18 +18,28 @@
 
 @media (min-width: @tablet-width) {
   .page-main__slogan {
-    margin-top: -100px;
+    margin-top: -70px;
     background-color: #f9f9f9;
     width: auto;
-    min-height: 450px;
+    border-top: 1px solid #ececec;
+    padding-top: 52px;
+    min-height: 690px;
   }
 
   .page-main__heading {
     .wrapper-tablet ();
+    font-size: 43px;
+    line-height: 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-main__slogan {
+    margin-top: -55px;
+    padding-top: 45px;
+    min-height: 700px;
+  }
+
   .page-main__heading {
     .wrapper-desktop();
     font-size: 53px;

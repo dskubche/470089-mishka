@@ -13,22 +13,49 @@
 
   &--instagram {
     background-image: url("../img/icon-insta.svg");
+
+    &:hover {
+      background-image: url("../img/icon-insta-blue.svg");
+    }
   }
 
   &--facebook {
     background-image: url("../img/icon-fb.svg");
     background-position: 5px 5px;
+
+    &:hover {
+      background-image: url("../img/icon-fb-blue.svg");
+    }
   }
 
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
     margin-right: 47px;
+
+    &:hover {
+      background-image: url("../img/icon-twitter-blue.svg");
+    }
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 @media (min-width: @tablet-width) {
   .social__list {
-    width: 190px;
+    width: 185px;
     justify-content: space-between;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    margin-right: 190px;
   }
 }

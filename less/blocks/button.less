@@ -3,7 +3,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  color: #444444;
+  color: rgba(68, 68, 68, 1);
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid #444444;
@@ -11,4 +11,17 @@
   padding-bottom: 14px;
   width: 256px;
   text-align: center;
+
+  &:hover {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

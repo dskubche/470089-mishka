@@ -26,6 +26,7 @@
   font-weight: 400;
   color: #444444;
   font-style: normal;
+  text-decoration: none;
 }
 
 .reviews__item {
@@ -36,10 +37,11 @@
   background: none;
   border: 1px solid #ececec;
   background-repeat: no-repeat;
-  width: 128px;
+  width: 132px;
   height: 50px;
   background-position: center;
   margin-bottom: 38px;
+  margin-right: 0;
 
   &--backward {
     background-image: url("../img/icon-left-arrow.svg");
@@ -47,12 +49,14 @@
 
   &--forward {
     background-image: url("../img/icon-right-arrow.svg");
+    margin-left: -3px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .reviews {
     .container-tablet ();
+    margin-bottom: 190px;
   }
 
   .reviews__wrapper {
@@ -60,24 +64,46 @@
     position: relative;
   }
 
+  .reviews__title {
+    margin-left: -5px;
+    margin-bottom: 50px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 55px;
+  }
+
   .reviews__write {
     position: absolute;
     right: 0;
     top: 0;
+    width: 171px;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+  }
+
+  .reviews__author-instagram {
+    display: inline-block;
+    margin-top: 5px;
   }
 
   .reviews__toggle {
     position: absolute;
     margin-bottom: 0;
+    border: none;
 
     &--backward {
-      right: 100px;
-      bottom: 0;
+      right: 68px;
+      bottom: 5px;
     }
 
     &--forward {
-      right: 0;
-      bottom: 0;
+      right: -20px;
+      bottom: 5px;
     }
   }
 }
@@ -85,11 +111,25 @@
 @media (min-width: @desktop-width) {
   .reviews {
     .wrapper-desktop ();
+    margin-bottom: 260px;
   }
 
   .reviews__wrapper {
     width: 875px;
     margin-left: 175px;
     margin-right: 0;
+  }
+
+  .reviews__text {
+    margin-bottom: 36px;
+    width: 770px;
+  }
+
+  .reviews__write {
+    top: 7px;
+  }
+
+  .reviews__author-name {
+    font-size: 17px;
   }
 }
