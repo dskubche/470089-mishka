@@ -55,21 +55,28 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    .container-tablet ();
-      min-height: 456px;
-    margin-bottom: 105px;
-    padding-top: 43px;
-    background-image: url("../img/review@1x.jpg");
-      background-size: 350px 456px;
-      background-repeat: no-repeat;
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/review@2x.jpg");
-
-      }
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    padding-bottom: 5px;
+    background-position: bottom;
   }
 
   .reviews__wrapper {
-    .wrapper-tablet ();
+    .container-tablet ();
+    min-height: 456px;
+    box-sizing: border-box;
+    margin-bottom: 105px;
+    padding-top: 43px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../img/review@1x.jpg");
+    background-size: 350px 456px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
     position: relative;
   }
 
@@ -86,8 +93,8 @@
 
   .reviews__write {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 50px;
+    top: 80px;
     width: 171px;
   }
 
@@ -106,28 +113,23 @@
     border: none;
 
     &--backward {
-      right: 68px;
-      bottom: 5px;
+      right: 115px;
+      bottom: 47px;
     }
 
     &--forward {
-      right: -20px;
-      bottom: 5px;
+      right: 30px;
+      bottom: 47px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .reviews {
-    .wrapper-desktop ();
-    margin-bottom: 130px;
-    padding-top: 30px;
-  }
-
   .reviews__wrapper {
-    width: 875px;
-    margin-left: 175px;
-    margin-right: 0;
+    .wrapper-desktop ();
+    padding-left: 175px;
+    margin-bottom: 100px;
+    padding-top: 30px;
   }
 
   .reviews__text {
@@ -136,10 +138,23 @@
   }
 
   .reviews__write {
-    top: 7px;
+    top: 80px;
+    right: 0;
   }
 
   .reviews__author-name {
     font-size: 17px;
+  }
+
+  .reviews__toggle {
+    &--backward {
+      right: 65px;
+      bottom: 95px;
+    }
+
+    &--forward {
+      right: -25px;
+      bottom: 95px;
+    }
   }
 }
