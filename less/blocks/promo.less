@@ -1,6 +1,5 @@
 .promo {
   margin-bottom: 69px;
-  .container-mobile();
 }
 
 .promo__wrapper {
@@ -64,9 +63,13 @@
 
 @media (min-width: @tablet-width) {
   .promo {
-    .wrapper-tablet();
-    margin-bottom: 115px;
+    margin-bottom: 39px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    padding-bottom: 76px;
+    background-position: bottom;
   }
+
 
   .promo__wrapper {
     .wrapper-tablet();
@@ -136,24 +139,26 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    .wrapper-desktop();
-    margin-bottom: 154px;
+    margin-bottom: 70px;
   }
 
   .promo__wrapper {
-    width: 875px;
-    margin-left: 175px;
-    position: relative;
+      .wrapper-desktop();
   }
 
   .promo__wrapper-info {
-    margin-top: 27px;
+    margin-top: 20px;
+    margin-left: 176px;
+    order:2;
   }
 
   .promo__title {
-    width: 700px;
-    margin-left: -4px;
+    width: 600px;
+    margin-left: 45px;
     z-index: 5;
+    order:1;
+    position: relative;
+
   }
 
   .promo__description {
@@ -162,17 +167,18 @@
   }
 
   .promo__subtitle {
-    position: absolute;
     width: 90px;
-    left: -277px;
-    top: 3px;
+    margin-left: 40px;
+    margin-top: 25px;
+    order: 0;
   }
 
   .promo__image-wrapper {
     width: 526px;
     height: 637px;
-    margin-top: -115px;
     margin-left: 12px;
+    margin-top: -120px;
+    order:3;
   }
 
   .promo__image {
@@ -181,12 +187,15 @@
   }
 
   .promo__price {
-    margin-top: -110px;
-    margin-left: 4px;
+margin-top: -110px;
+    margin-left: 180px;
+    order: 4;
+
   }
 
   .promo__order {
     width: 289px;
-    margin-top: -55px;
+    order: 5;
+    margin-left: 175px;
   }
 }

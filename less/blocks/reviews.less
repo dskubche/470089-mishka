@@ -56,7 +56,16 @@
 @media (min-width: @tablet-width) {
   .reviews {
     .container-tablet ();
-    margin-bottom: 190px;
+      min-height: 456px;
+    margin-bottom: 105px;
+    padding-top: 43px;
+    background-image: url("../img/review@1x.jpg");
+      background-size: 350px 456px;
+      background-repeat: no-repeat;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+
+      }
   }
 
   .reviews__wrapper {
@@ -111,7 +120,8 @@
 @media (min-width: @desktop-width) {
   .reviews {
     .wrapper-desktop ();
-    margin-bottom: 260px;
+    margin-bottom: 130px;
+    padding-top: 30px;
   }
 
   .reviews__wrapper {
