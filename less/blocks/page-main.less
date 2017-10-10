@@ -26,7 +26,7 @@
   .page-main__slogan {
     margin-top: -70px;
     background-color: #f9f9f9;
-    width: auto;
+    .container-tablet();
     position: relative;
     border-top: 1px solid #ececec;
     padding-top: 52px;
@@ -62,6 +62,7 @@ background-size: 768px auto;
 
 @media (min-width: @desktop-width) {
   .page-main__slogan {
+    .container-desktop();
     margin-top: -55px;
     padding-top: 45px;
     min-height: 700px;

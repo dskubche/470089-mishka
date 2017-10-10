@@ -60,6 +60,7 @@
     background-repeat: repeat-x;
     padding-bottom: 5px;
     background-position: bottom;
+    .container-tablet();
   }
 
   .reviews__wrapper {
@@ -125,6 +126,12 @@
 }
 
 @media (min-width: @desktop-width) {
+
+  .reviews
+  {
+    .container-desktop();
+  }
+
   .reviews__wrapper {
     .wrapper-desktop ();
     padding-left: 175px;
