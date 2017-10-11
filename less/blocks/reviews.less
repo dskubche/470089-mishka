@@ -1,6 +1,10 @@
 .reviews {
-  margin-bottom: 85px;
+  margin-bottom: 20px;
   .container-mobile ();
+  background-image: url("../img/bg-zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+  padding-bottom: 65px;
+  background-position: bottom;
 }
 
 .reviews__wrapper {
@@ -10,6 +14,9 @@
 .reviews__text {
   line-height: 30px;
   margin-bottom: 30px;
+  padding-left: 2px;
+  padding-top: 2px;
+  box-sizing: border-box;
 }
 
 .reviews__author-name {
@@ -18,6 +25,7 @@
   font-weight: 700;
   color: #000000;
   font-style: normal;
+  padding-left: 4px;
 }
 
 .reviews__author-instagram {
@@ -27,6 +35,7 @@
   color: #444444;
   font-style: normal;
   text-decoration: none;
+  padding-left: 4px;
 }
 
 .reviews__item {
@@ -42,6 +51,7 @@
   background-position: center;
   margin-bottom: 38px;
   margin-right: 0;
+  outline: none;
 
   &--backward {
     background-image: url("../img/icon-left-arrow.svg");
@@ -51,16 +61,26 @@
     background-image: url("../img/icon-right-arrow.svg");
     margin-left: -3px;
   }
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .reviews {
     width: 100%;
-    background-image: url("../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line-tablet.svg");
     background-repeat: repeat-x;
-    padding-bottom: 5px;
-    background-position: bottom;
+    padding-bottom: 1px;
+    background-position: center bottom 10px;
     .container-tablet();
+    margin-bottom: 40px;
   }
 
   .reviews__wrapper {
@@ -90,6 +110,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 55px;
+    padding-left: 0px;
   }
 
   .reviews__write {
@@ -101,11 +122,13 @@
 
   .reviews__author-name {
     font-size: 18px;
+    padding-left: 0px;
   }
 
   .reviews__author-instagram {
     display: inline-block;
     margin-top: 5px;
+    padding-left: 0px;
   }
 
   .reviews__toggle {
@@ -130,18 +153,24 @@
   .reviews
   {
     .container-desktop();
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    padding-bottom: 1px;
+    background-position: center bottom 10px;
+    margin-bottom: 63px;
   }
 
   .reviews__wrapper {
     .wrapper-desktop ();
     padding-left: 175px;
     margin-bottom: 100px;
-    padding-top: 30px;
+    padding-top: 28px;
   }
 
   .reviews__text {
     margin-bottom: 36px;
     width: 770px;
+    box-sizing: border-box;
   }
 
   .reviews__write {

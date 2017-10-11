@@ -21,7 +21,8 @@
   color: #000000;
   padding-top: 65px;
   padding-bottom: 18px;
-  padding-right: 55px;
+  padding-right: 50px;
+  padding-left: 2px;
 
   &--ecology {
     background-image: url("../img/icon-feature-flower.svg");
@@ -114,7 +115,7 @@
 @media (min-width: @desktop-width) {
   .about-us {
     .container-desktop ();
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   .about-us__wrapper {
@@ -122,12 +123,19 @@
   }
 
   .about-us__list {
-    margin-left: 175px;
-    margin-right: 175px;
+    margin-left: 174px;
+    margin-right: 176px;
   }
 
   .about-us__item {
     width: 350px;
+    box-sizing: border-box;
+    &--package {
+      padding-right: 80px;
+    }
+    &--prices {
+padding-right: 90px;
+    }
   }
 
   .about-us__title {
