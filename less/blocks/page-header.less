@@ -11,6 +11,8 @@
 }
 
 .page-header__logo[href] {
+  z-index: 10;
+
   &:hover {
     opacity: 0.6;
   }
@@ -33,6 +35,12 @@
   .page-header__logo {
     margin-left: 0;
     margin-right: 170px;
+    margin-top: 18px;
+  }
+
+  .page-header__logo-image {
+    width: 113px;
+    height: auto;
   }
 }
 
@@ -40,10 +48,16 @@
   .page-header {
     position: relative;
     .wrapper-desktop();
+    flex-direction: column-reverse;
+    margin-bottom: 93px;
   }
 
   .page-header__logo {
-    position: absolute;
-    left: 480px;
+    margin-top: -135px;
+    margin-left: 450px;
+  }
+
+  .page-header__logo-image {
+    width: 148px;
   }
 }
