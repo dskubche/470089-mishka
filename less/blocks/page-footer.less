@@ -30,17 +30,19 @@
   }
 
   .page-footer__logo-image {
-    margin-top: 0px;
+    margin-top: 0;
     display: block;
     margin-right: 40px;
-  &:hover{
-    fill:#46c1ae;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
   }
-  &:active{
-    fill:#46c1ae;
-    opacity: 0.3;
-  }
-}
 }
 
 @media (min-width: @desktop-width) {
@@ -51,6 +53,5 @@
   .page-footer__logo-image {
     margin-top: 5px;
     margin-right: 230px;
-
   }
 }

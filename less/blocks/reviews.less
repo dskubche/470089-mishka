@@ -61,12 +61,15 @@
     background-image: url("../img/icon-right-arrow.svg");
     margin-left: -3px;
   }
+
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
+
   &:focus {
     opacity: 0.3;
   }
@@ -110,7 +113,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 55px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .reviews__write {
@@ -122,13 +125,13 @@
 
   .reviews__author-name {
     font-size: 18px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .reviews__author-instagram {
     display: inline-block;
     margin-top: 5px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .reviews__toggle {
@@ -149,9 +152,7 @@
 }
 
 @media (min-width: @desktop-width) {
-
-  .reviews
-  {
+  .reviews {
     .container-desktop();
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
