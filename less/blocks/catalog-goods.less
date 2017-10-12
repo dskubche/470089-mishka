@@ -95,25 +95,45 @@
 .catalog-goods__icon-cart {
   position: absolute;
   right: 28px;
-  bottom: 31px;
+  bottom: 31px;}
 
-  &:hover {
+  .catalog-goods__price-cart:hover .catalog-goods__icon-cart
+  {
     path {
       fill: #63d1bb;
     }
   }
 
-  &:focus {
+  .catalog-goods__price-cart:focus .catalog-goods__icon-cart
+  {
     path {
       fill: #d0f1ea;
     }
+    opacity: 0.3;
   }
 
-  &:active {
+  .catalog-goods__price-cart:active .catalog-goods__icon-cart
+  {
     path {
       fill: #d0f1ea;
     }
+    opacity: 0.3;
   }
+
+
+.catalog-goods__price-cart:hover .catalog-goods__price
+{
+  opacity: 0.6;
+}
+
+.catalog-goods__price-cart:focus .catalog-goods__price
+{
+  opacity: 0.3;
+}
+
+.catalog-goods__price-cart:active .catalog-goods__price
+{
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

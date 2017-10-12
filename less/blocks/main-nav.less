@@ -1,3 +1,27 @@
+.main-nav
+{
+  position: relative;
+}
+
+.main-nav__wrapper--opened
+{
+  position: absolute;
+  z-index: 1;
+  top: -35px;
+  left:0;
+}
+
+.main-nav__wrapper--closed .main-nav__list
+{
+top: 10px;
+position: absolute;
+clip: rect(0, 0, 0, 0);
+width: 1px;
+height: 1px;
+margin: -1px;
+overflow: hidden;
+}
+
 .main-nav__wrapper {
   position: relative;
 }
@@ -5,12 +29,13 @@
 .main-nav__toggle {
   background: none;
   border: none;
-  background-image: url("../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   margin-top: 32px;
 }
+
 
 .main-nav__list {
   list-style: none;
@@ -71,15 +96,15 @@
 }
 
 .main-nav__wrapper:hover .main-nav__toggle {
-  background-image: url("../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-open.svg");
 }
 
 .main-nav__wrapper:focus .main-nav__toggle {
-  background-image: url("../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-open.svg");
 }
 
 .main-nav__wrapper:active .main-nav__toggle {
-  background-image: url("../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-open.svg");
 }
 
 .main-nav__delivery {
