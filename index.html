@@ -260,19 +260,22 @@
     </div>
   </footer>
 
-  <section class="add-cart visually-hidden">
-    <h2 class="add-cart__title">Добавить в корзину</h2>
-    <p class="add-cart__text">Выберите размер:</p>
-    <form class="add-cart__form">
-      <input type="radio" class="add-cart__input visually-hidden" id="add-cart__small" value="add-cart__small" name="add-cart__size" checked>
-      <label for="add-cart__small" class="add-cart__label">S</label>
-      <input type="radio" class="add-cart__input visually-hidden" id="add-cart__medium" value="add-cart__medium" name="add-cart__size">
-      <label for="add-cart__medium" class="add-cart__label">M</label>
-      <input type="radio" class="add-cart__input visually-hidden" id="add-cart__large" value="add-cart__large" name="add-cart__size">
-        <label for="add-cart__large" class="add-cart__label">L</label>
-      <button class="button add-cart__button" type="submit">Добавить</button>
-    </form>
-  </section>
+  <section class="add-cart">
+      <div class="add-cart__wrapper">
+      <h2 class="add-cart__title">Добавить в корзину</h2>
+      <p class="add-cart__text">Выберите размер:</p>
+      <form class="add-cart__form">
+        <input type="radio" class="add-cart__input visually-hidden" id="add-cart__small" value="add-cart__small" name="add-cart__size" checked>
+        <label for="add-cart__small" class="add-cart__label">S</label>
+        <input type="radio" class="add-cart__input visually-hidden" id="add-cart__medium" value="add-cart__medium" name="add-cart__size">
+        <label for="add-cart__medium" class="add-cart__label">M</label>
+        <input type="radio" class="add-cart__input visually-hidden" id="add-cart__large" value="add-cart__large" name="add-cart__size">
+          <label for="add-cart__large" class="add-cart__label">L</label>
+        <button class="button add-cart__button" type="submit">Добавить</button>
+      </form>
+    </div>
+    </section>
+  <script src="js/modal-index.js"></script>
   <script src="js/picturefill.js"></script>
 </body>
 
