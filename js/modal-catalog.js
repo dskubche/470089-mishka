@@ -1,12 +1,14 @@
-var link = document.querySelector(".catalog-goods__icon-cart");
+var links = document.querySelectorAll(".catalog-goods__icon-cart");
 var popup = document.querySelector(".add-cart");
 var close = popup.querySelector(".add-cart__button");
 var form = popup.querySelector("form");
 var size = localStorage.getItem("add-cart__size");
 
-link.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.add("add-cart--show");
+Array.from(links).forEach(link => {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("add-cart--show");
+    });
 });
 
 form.addEventListener("submit", function(evt) {
