@@ -10,7 +10,7 @@ link.addEventListener("click", function(evt) {
 });
 
 form.addEventListener("submit", function(evt) {
-    localStorage.setItem("size", size.value);
+  localStorage.setItem("size", size.value);
 });
 
 close.addEventListener("click", function(evt) {

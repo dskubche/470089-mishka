@@ -9,13 +9,18 @@
 </head>
 
 <body class="page">
+  <svg style="display:none">
+  <symbol id="icon-search" viewBox="-0.8 -0.8 17.6 17.6">
+    <path fill="#d3d2d2" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+  </symbol>
+</svg>
   <header class="page-header">
     <a class="page-header__logo">
       <picture>
-      <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="90" height="35" alt="Магазин Mishka" />
-    </picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="90" height="35" alt="Магазин Mishka" />
+      </picture>
     </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -31,9 +36,7 @@
         <ul class="main-nav__list main-nav__list--site">
           <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link" href="search.html">
-              <svg class="main-nav__icon--search" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                <path fill="#d3d2d2" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
-              </svg>
+              <svg class="main-nav__icon--search" width="18" height="18"><use xlink:href="#icon-search"></use></svg>
               <span class="main-nav__link--text">Поиск по сайту</span></a>
           </li>
           <li class="main-nav__item main-nav__item--cart">
@@ -70,7 +73,8 @@
         <a class="goods__link" href="catalog-interior.html">
           <div class="goods__item goods__item--interior">
             Предметы<br />интерьера
-            <svg class="goods__icon goods__icon--interior" version="1.1" fill="#3bb09d" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.219px" height="62.411px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
+            <svg class="goods__icon goods__icon--interior" version="1.1" fill="#3bb09d" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.219px" height="62.411px" viewBox="-259.404 -19.675 40.219 62.411"
+              enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
               <g>
                 <path d="M-244.227,18.283c-0.286,0.966-0.245,2.191,0.027,3.639c0.494,2.635,1.687,6.041,2.358,9.67h5.062 c0.696-3.641,1.949-7.05,2.471-9.683c0.287-1.445,0.33-2.66,0.041-3.617c-0.275-0.899-0.89-1.618-2.021-2.303h-5.997 C-243.361,16.668-243.96,17.38-244.227,18.283z"/>
                 <path d="M-232.395,38.278h-13.799c-1.293,0-2.299,0.976-2.299,2.229v2.229h2.299h13.799h2.299v-2.229 C-230.096,39.254-231.102,38.278-232.395,38.278z"/>
@@ -84,7 +88,8 @@
         <a class="goods__link" href="catalog-toys.html">
           <div class="goods__item goods__item--toys">
             Детские<br />игрушки
-            <svg class="goods__icon goods__icon--toy" version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="59.62px" viewBox="226.001 226.19 60 59.62" enable-background="new 226.001 226.19 60 59.62" xml:space="preserve">
+            <svg class="goods__icon goods__icon--toy" version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="59.62px" viewBox="226.001 226.19 60 59.62" enable-background="new 226.001 226.19 60 59.62"
+              xml:space="preserve">
               <path fill="#35a999" d="M226.001,269.871l27.438,15.934v-23.346l-27.438-15.94V269.871z M277.347,238.627v2.453 c0,1.817-3.458,3.29-7.73,3.29c-4.266,0-7.727-1.473-7.727-3.29v-4.059h0.024c0.26,1.714,3.604,3.073,7.702,3.073 c4.272,0,7.729-1.474,7.729-3.285c0-1.819-3.457-3.289-7.729-3.289c-0.339,0-0.675,0.01-1.002,0.03l-4.975-2.888v3.086 c0,1.817-3.454,3.29-7.723,3.29c-2.683,0-5.045-0.583-6.433-1.467c-0.196-0.203-0.439-0.401-0.732-0.586 c-0.363-0.381-0.565-0.797-0.565-1.236v-2.986l-4.807,2.792c-0.347-0.017-0.696-0.033-1.054-0.033c-4.267,0-7.727,1.469-7.727,3.289 c0,1.811,3.46,3.285,7.727,3.285c4.099,0,7.446-1.358,7.705-3.073h0.022v4.059c0,1.817-3.455,3.29-7.727,3.29 c-4.267,0-7.727-1.473-7.727-3.29v-2.42l-5.952,3.452l27.531,15.986l27.351-15.882L277.347,238.627z M263.703,248.793 c0,1.817-3.46,3.287-7.727,3.287c-4.269,0-7.729-1.47-7.729-3.287v-4.059h0.024c0.26,1.715,3.603,3.076,7.705,3.076 c4.101,0,7.443-1.361,7.705-3.076h0.021V248.793L263.703,248.793z M258.558,262.666v23.144L286,269.871v-23.144L258.558,262.666z  M255.917,232.762c4.269,0,7.723-1.47,7.723-3.286c0-1.814-3.454-3.287-7.723-3.287c-4.27,0-7.729,1.472-7.729,3.287 C248.187,231.292,251.647,232.762,255.917,232.762"/>
             </svg>
           </div>
@@ -94,9 +99,9 @@
     <section class="promo">
       <div class="promo__wrapper">
 
-          <h2 class="promo__title section-title">Вязаные корзинки</h2>
-          <h3 class="promo__subtitle">Товар недели</h3>
-          <div class="promo__wrapper-info">
+        <h2 class="promo__title section-title">Вязаные корзинки</h2>
+        <h3 class="promo__subtitle">Товар недели</h3>
+        <div class="promo__wrapper-info">
           <p class="promo__description">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
@@ -129,12 +134,16 @@
         </div>
         <div class="promo__image-wrapper">
           <picture>
-          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@2x.jpg 2x, img/triple-set-desktop@1x.jpg 1x">
-          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@2x.jpg 2x, img/triple-set-tablet@1x.jpg 1x">
-          <source media="(min-width: 320px)" srcset="img/triple-set-mobile@2x.jpg 2x, img/triple-set-mobile@1x.jpg 1x">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@2x.webp 2x, img/triple-set-desktop@1x.webp 1x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@2x.webp 2x, img/triple-set-tablet@1x.webp 1x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/triple-set-mobile@2x.webp 2x, img/triple-set-mobile@1x.webp 1x">
+
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@2x.jpg 2x, img/triple-set-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@2x.jpg 2x, img/triple-set-tablet@1x.jpg 1x">
+            <source media="(min-width: 320px)" srcset="img/triple-set-mobile@2x.jpg 2x, img/triple-set-mobile@1x.jpg 1x">
             <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" />
-        </picture>
-      </div>
+          </picture>
+        </div>
         <p class="promo__price">
           Цена: 990 руб.
         </p>
@@ -208,16 +217,21 @@
             </p>
           </div>
         </div>
-<div class="contacts__map-wrapper">
-  <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.323083299999993!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1507723623409" height="458" style="border:0" allowfullscreen></iframe>
+        <div class="contacts__map-wrapper">
+          <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.323083299999993!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1507723623409"
+            height="458" style="border:0" allowfullscreen></iframe>
           <picture>
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@2x.jpg 2x, img/map-desktop@1x.jpg 1x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@2x.jpg 2x, img/map-tablet@1x.jpg 1x">
-          <source media="(min-width: 320px)" srcset="img/map-mobile@2x.jpg 2x, img/map-mobile@1x.jpg 1x">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@2x.webp 2x, img/map-desktop@1x.webp 1x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@2x.webp 2x, img/map-tablet@1x.webp 1x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/map-mobile@2x.webp 2x, img/map-mobile@1x.webp 1x">
+
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@2x.jpg 2x, img/map-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@2x.jpg 2x, img/map-tablet@1x.jpg 1x">
+            <source media="(min-width: 320px)" srcset="img/map-mobile@2x.jpg 2x, img/map-mobile@1x.jpg 1x">
             <img class="contacts__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" />
-        </picture>
-</div>
-  <a class="button contacts__write" href="write-us.html">Напишите нам</a>
+          </picture>
+        </div>
+        <a class="button contacts__write" href="write-us.html">Напишите нам</a>
       </div>
 
     </section>
@@ -252,7 +266,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-      Разработано
+        Разработано
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span><svg class="copyright__logo-htmlacademy" version="1.1" fill="#63d1bb" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
           <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
         </svg></a>
@@ -261,7 +275,7 @@
   </footer>
 
   <section class="add-cart">
-      <div class="add-cart__wrapper">
+    <div class="add-cart__wrapper">
       <h2 class="add-cart__title">Добавить в корзину</h2>
       <p class="add-cart__text">Выберите размер:</p>
       <form class="add-cart__form">
@@ -270,11 +284,11 @@
         <input type="radio" class="add-cart__input visually-hidden" id="add-cart__medium" value="add-cart__medium" name="add-cart__size">
         <label for="add-cart__medium" class="add-cart__label">M</label>
         <input type="radio" class="add-cart__input visually-hidden" id="add-cart__large" value="add-cart__large" name="add-cart__size">
-          <label for="add-cart__large" class="add-cart__label">L</label>
+        <label for="add-cart__large" class="add-cart__label">L</label>
         <button class="button add-cart__button" type="submit">Добавить</button>
       </form>
     </div>
-    </section>
+  </section>
   <script src="js/modal-index.js"></script>
   <script src="js/picturefill.js"></script>
 </body>

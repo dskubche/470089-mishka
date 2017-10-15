@@ -5,14 +5,14 @@ var form = popup.querySelector("form");
 var size = localStorage.getItem("add-cart__size");
 
 Array.from(links).forEach(link => {
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.add("add-cart--show");
-    });
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.add("add-cart--show");
+  });
 });
 
 form.addEventListener("submit", function(evt) {
-    localStorage.setItem("size", size.value);
+  localStorage.setItem("size", size.value);
 });
 
 close.addEventListener("click", function(evt) {
