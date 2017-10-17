@@ -126,13 +126,13 @@
         </div>
         <div class="form__tel-email-wrapper">
           <div class="form__tel">
-            <h3 class="form__title form__title--tel">Тел</h3>
-            <label for="tel" class="form__label form__label--tel visually-hidden"></label>
+            <label for="tel" class="form__label form__label--tel"><h3 class="form__title form__title--tel">Тел</h3></label>
             <input type="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" class="form__input form__input--tel" required/>
           </div>
           <div class="form__email">
+            <label for="email" class="form__label form__label--email">
             <h3 class="form__title form__title--email">E-mail</h3>
-            <label for="email" class="form__label form__label--email visually-hidden"></label>
+            </label>
             <input type="email" id="email" placeholder="Ваш Email*" class="form__input form__input--email" required/>
           </div>
         </div>
@@ -174,6 +174,7 @@
   </footer>
   <script src="js/picturefill.js"></script>
   <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
 </body>
 
 </html>
