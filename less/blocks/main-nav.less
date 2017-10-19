@@ -2,6 +2,7 @@
   position: relative;
 }
 
+/*Класс для открытого с помощью JS меню - не в потоке(как в макете) */
 .main-nav__wrapper--opened {
   position: absolute;
   z-index: 1;
@@ -9,6 +10,7 @@
   left: 0;
 }
 
+/*Класс для закрытого с помощью JS меню */
 .main-nav__wrapper--closed .main-nav__list {
   top: 10px;
   position: absolute;
@@ -26,11 +28,23 @@
 .main-nav__toggle {
   background: none;
   border: none;
-  background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   margin-top: 32px;
+  opacity: 0;
+  /* Класс для иконки закрытия меню - реализация с помощью JS*/
+  &--closed
+  {
+    background-image: url("../img/icon-menu-close.svg");
+    opacity: 1;
+  }
+  /* Класс для иконки открытия меню - реализация с помощью JS*/
+  &--opened
+  {
+    background-image: url("../img/icon-menu-open.svg");
+    opacity: 1;
+  }
 }
 
 .main-nav__list {
@@ -89,18 +103,6 @@
   &--search::before {
     display: none;
   }
-}
-
-.main-nav__wrapper:hover .main-nav__toggle {
-  background-image: url("../img/icon-menu-open.svg");
-}
-
-.main-nav__wrapper:focus .main-nav__toggle {
-  background-image: url("../img/icon-menu-open.svg");
-}
-
-.main-nav__wrapper:active .main-nav__toggle {
-  background-image: url("../img/icon-menu-open.svg");
 }
 
 .main-nav__delivery {
